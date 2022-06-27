@@ -3,30 +3,63 @@
     <head>
         <title>종범이의 음식 탐험 - 돼지국밥</title>
         <meta charset="utf-8">
+        <!-- id > class > tag -->
+        <!-- id : # , class : . -->
+        <link rel="stylesheet" href="style.css">
+        <!-- 구글 애널리틱스 활용 -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-5MK699MGR6"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-5MK699MGR6');
+        </script>
     </head>
 
     <body>
-        <h1><a href="index.html">음식 추천</a></h1>
-        <ol>
-            <li><a href="1.html">감자탕</a></li>
-            <li><a href="2.html">돼지국밥</a></li>
-            <li><a href="3.html">닭강정</a></li>
-        </ol>
-        <h2>돼지국밥</h2>
-        <p>
-            <strong>돼지의 <u>뼈와 살코기</u></strong>를 푹 삶아 우려낸 국물에 <mark>삶아진 살코기</mark>를 썰어 고명으로 넣고 밥을 말아 먹는 식당 음식. 부산광역시의 대표적인 향토음식이다.
-        </p>
-        <img src="porksoup.jpg" width="450" title="돼지국밥"> 
-        <p style="margin-top: 45px;">
-            돼지국밥의 기원에는 여러 설이 있고, 아직 명확한 결론이 나지 않은 상태이다. 유력한 가설 중 하나는 이북 전래설인데, 
-            이 설에 따르면 함경남도 지역에서 먹던 음식이지만 한국전쟁 당시 흥남철수 등을 통해 대거 월남한 함흥 및 그 일대 사람들과
-            함께 정착되어 밀면과 함께 경상남도, 특히 부산의 대표적인 향토 음식이 되었다고 본다.<br>
-            비슷한 북한 음식인 <a href="https://namu.wiki/w/%EC%84%B1%EA%B3%84%EC%9C%A1?from=%EC%84%B1%EA%B3%84%ED%83%95" target="_blank" title="성계탕 나무위키"><em>성계탕</em></a> 문서 참조.
-        </p>
-        <p>
-            <a href="https://map.naver.com/v5/search/%EB%B6%80%EC%82%B0%EB%8F%BC%EC%A7%80%EA%B5%AD%EB%B0%A5%EB%A7%9B%EC%A7%91/place/37673639?placePath=%3Fentry=pll%26from=nx%26fromNxList=true&n_ad_group_type=10&n_query=%EB%B6%80%EC%82%B0%EB%8F%BC%EC%A7%80%EA%B5%AD%EB%B0%A5%EB%A7%9B%EC%A7%91&c=14108609.6652828,4486645.3398740,15,0,0,0,dh"
-            target="_blank"
-            title="돼지국밥 추천 식당 위치">돼지국밥 식당 추천</a>
-        </p>
+        <h1 class="main"><a href="index.html">음식 추천</a></h1>
+        <div id="grid">
+            <div class="list">
+                <ol>
+                    <li><a href="1.html">감자탕</a></li>
+                    <li><a href="2.html" id="active">돼지국밥</a></li>
+                    <li><a href="3.html">닭강정</a></li>
+                </ol>
+            </div>
+            <div class="content">
+                <h2>돼지국밥</h2>
+                <p>
+                    <strong>돼지의 <u>뼈와 살코기</u></strong>를 푹 삶아 우려낸 국물에 <mark>삶아진 살코기</mark>를 썰어 고명으로 넣고 밥을 말아 먹는 식당 음식. 부산광역시의 대표적인 향토음식이다.
+                </p>
+                <img src="porksoup.jpg" width="450" title="돼지국밥"> 
+                <p style="margin-top: 45px;">
+                    돼지국밥의 기원에는 여러 설이 있고, 아직 명확한 결론이 나지 않은 상태이다. 유력한 가설 중 하나는 이북 전래설인데, 
+                    이 설에 따르면 함경남도 지역에서 먹던 음식이지만 한국전쟁 당시 흥남철수 등을 통해 대거 월남한 함흥 및 그 일대 사람들과
+                    함께 정착되어 밀면과 함께 경상남도, 특히 부산의 대표적인 향토 음식이 되었다고 본다.<br>
+                    비슷한 북한 음식인 <a href="https://namu.wiki/w/%EC%84%B1%EA%B3%84%EC%9C%A1?from=%EC%84%B1%EA%B3%84%ED%83%95" target="_blank" title="성계탕 나무위키"><em>성계탕</em></a> 문서 참조.
+                </p>
+                <p>
+                    <a href="https://map.naver.com/v5/search/%EB%B6%80%EC%82%B0%EB%8F%BC%EC%A7%80%EA%B5%AD%EB%B0%A5%EB%A7%9B%EC%A7%91/place/37673639?placePath=%3Fentry=pll%26from=nx%26fromNxList=true&n_ad_group_type=10&n_query=%EB%B6%80%EC%82%B0%EB%8F%BC%EC%A7%80%EA%B5%AD%EB%B0%A5%EB%A7%9B%EC%A7%91&c=14108609.6652828,4486645.3398740,15,0,0,0,dh"
+                    class="recommend"
+                    target="_blank"
+                    title="돼지국밥 추천 식당 위치">돼지국밥 식당을 추천해요!</a>
+                </p>
+                <div class="showvideo"><a href=video2.html>돼지국밥을 만드려면?</a></div>
+            </div>
+        </div>
+        <!--Tawk.to 채팅창 활용-->
+        <script type="text/javascript">
+            var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+            (function(){
+            var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+            s1.async=true;
+            s1.src='https://embed.tawk.to/62b808877b967b1179968941/1g6fe2leo';
+            s1.charset='UTF-8';
+            s1.setAttribute('crossorigin','*');
+            s0.parentNode.insertBefore(s1,s0);
+            })();
+        </script>
+        <!--Tawk.to 채팅창 활용-->
     </body>
 </html>
